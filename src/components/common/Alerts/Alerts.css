@@ -1,0 +1,11 @@
+.alert-error{
+    text-align: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.alert-success{
+    text-align: center;
+    align-items: center;
+    border: 1px solid green;
+}

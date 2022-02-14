@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+hr{ background: beige; }
+
+.sidebar{
+    color: azure;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50px;
+    background: #282535;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active{ width: 210px; }
+
+.sidebar .menu{
+    height: 4%;
+    width: 100%;
+}
+
+.sidebar.active .menu{
+    height: 3.7%;
+    width: 100%;
+}
+
+.sidebar .img-logo{
+    position: absolute;
+    color: azure;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar.active .img-logo{
+    left: 0%;
+    width: 60%;
+    height: 3.5%;
+    top: 1%;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.sidebar #btn{
+    position: absolute;
+    color: azure;
+    left: 37%;
+    top: 1.5%;
+    cursor: pointer;
+}
+
+.sidebar #btn:hover{
+    position: absolute;
+    color: azure;
+    background: rgb(92, 95, 95);
+    left: 37%;
+    top: 1.5%;
+}
+
+.sidebar.active #btn{
+    color: azure;
+    top: 1.5%;
+    left: 85%;
+}
+
+.sidebar ul{
+    margin-top: 50%;
+    transition: all 0.4s ease;
+}
+
+.sidebar.active ul{ margin-top: 10%; }
+
+.sidebar ul li{
+    position: relative;
+    height: 60px;
+    width: 96%;
+    list-style: none;
+}
+
+.sidebar.active ul li{ left: 3%; }
+
+.sidebar ul li a{
+    color: azure;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 10px;
+    height: 50px;
+}
+
+.sidebar.active ul li a{
+    color: azure;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+
+.sidebar ul li a div{ opacity: 0; }
+
+.sidebar.active ul li a div{ opacity: 1; }
+
+.sidebar ul li a:hover{
+    color: black;
+    background: azure;
+}
+
+.sidebar.active ul li a:hover{
+    color: black;
+    background: azure;
+}
+
+.sidebar ul li a i{
+    height: 30%;
+    border-radius: 100px;
+    line-height: 50px;
+    padding-left: 35%;
+    text-align: center;
+}
+
+.sidebar.active ul li a i{
+    height: 60%;
+    min-width: 40%;
+    border-radius: 100px;
+    line-height: 25px;
+    padding-left: 10%;
+    text-align: center;
+}
+  
+.sidebar ul li .tooltip{
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 15px);
+    z-index: 3;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 1;
+    white-space: nowrap;
+    pointer-events: none;
+    display: block;
+}
+.sidebar.active ul li .tooltip{
+    display: none;
+}
+.sidebar ul li:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+    top: 50%;
+    transform: translateY(-50%, -50%);
+}
+
+.home-context{
+    position: absolute;
+    background: rgb(219, 219, 223);
+    height: 100%;
+    width: calc(100% - 50px);
+    left: 50px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .home-context{
+    width: calc(100% - 210px);
+    left: 210px;
+}
