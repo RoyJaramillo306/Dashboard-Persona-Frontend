@@ -85,7 +85,7 @@ const Login = ({history}) => {
                             <div>
                                 <InputLabel className='label-input' htmlFor="pass">Password</InputLabel>
                                 <Input className='inputBx-password' id="pass" name='password' type={ showPassword ? 'text' : 'password' } value={password} onChange={cambio}
-                                    startAdornment={ <InputAdornment position="start"> <MdVpnKey /> </InputAdornment> } placeholder="Ingrese su password"
+                                    startAdornment={ <InputAdornment position="start"> <MdVpnKey /> </InputAdornment> } placeholder="Ingrese con la contraseña: demo123"
                                     endAdornment={
                                         <InputAdornment position="end">
                                             <IconButton aria-label="toggle password visibility" onClick={handleClickShowPassword} onMouseDown={handleMouseDownPassword}>
