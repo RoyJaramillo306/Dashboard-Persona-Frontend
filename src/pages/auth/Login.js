@@ -79,7 +79,7 @@ const Login = ({history}) => {
                         <form autoComplete='off' onSubmit={login}><br/>
                             <div>
                                 <InputLabel className='label-input' htmlFor="correo">Email</InputLabel>
-                                <Input type='text' className='inputBx-email' name='email' value={email} onChange={cambio} id="correo" startAdornment={ <InputAdornment position="start"> <MdEmail /> </InputAdornment> } placeholder="Ingrese su correo" />
+                                <Input type='text' className='inputBx-email' name='email' value={email} onChange={cambio} id="correo" startAdornment={ <InputAdornment position="start"> <MdEmail /> </InputAdornment> } placeholder="Ingrese con el correo demo@demo.com"/>
                             </div>
                             <br/>
                             <div>
